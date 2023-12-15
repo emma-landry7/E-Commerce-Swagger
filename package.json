@@ -1,0 +1,21 @@
+{
+  "name": "e-commerce-swagger",
+  "version": "1.0.0",
+  "description": "Module 5 Lab 7: Swagger",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emma-landry7/E-Commerce-Swagger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emma-landry7/E-Commerce-Swagger/issues"
+  },
+  "homepage": "https://github.com/emma-landry7/E-Commerce-Swagger#readme"
+}

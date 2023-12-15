@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Page</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous" />
+    <!-- <script src="index.js"></script> -->
+</head>
+<body class="mx-2">
+    <template id="card-template">
+        <section class="card m-2" style="width: 17rem">
+            <article class="card-body">
+                <img id="output" class="card-image" style="width: 13rem">
+                <h4 class="card-title"></h4>
+                <h6>$<span class="card-price"></span></h6>
+                <p class="card-text"></p>
+            </article>
+        </section>
+    </template>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Department Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" id="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" id="mens-clothing" onclick="dropdown()">Men's Clothing</a></li>
+                  <li><a class="dropdown-item" href="#" id="womens-clothing" onclick="dropdown()">Women's Clothing</a></li>
+                  <li><a class="dropdown-item" href="#" id="jewelry" onclick="dropdown()">Jewelry</a></li>
+                  <li><a class="dropdown-item" href="#" id="electronics" onclick="dropdown()">Electronics</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+
+    <div id="product-list" class="row justify-content-around"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
