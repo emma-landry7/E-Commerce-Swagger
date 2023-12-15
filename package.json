@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
+    "dev": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/emma-landry7/E-Commerce-Swagger/issues"
   },
-  "homepage": "https://github.com/emma-landry7/E-Commerce-Swagger#readme"
+  "homepage": "https://github.com/emma-landry7/E-Commerce-Swagger#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
